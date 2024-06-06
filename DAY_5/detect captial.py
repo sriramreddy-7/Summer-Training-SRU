@@ -36,14 +36,38 @@
 # print(s,c)
 # print(abs(s-c))
 
-nums = [1,2,2,1]
-k = 1
-c=0
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        if abs(nums[i]-nums[j])==k:
-            c=c+1
-print(c)
+# nums = [1,2,2,1]
+# k = 1
+# c=0
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if abs(nums[i]-nums[j])==k:
+#             c=c+1
+# print(c)
+
+# nums=[1,2,2,3]
+# a=nums
+# inc=True
+# dnc=True
+# for i in range(0,len(nums)-1):
+#     print(f"{a[i]},{a[i+1]}")
+#     if a[i]>=a[i+1]:
+#         inc=False
+#         print("decreasing")
+#         if dnc ==False and inc ==False:
+#             print(False)
+#             break
+# for i in range(0,len(nums)-1):
+#     if a[i]<=a[i+1]:
+#         dnc=False
+#         print("increasing")
+#         if dnc ==False and inc ==False:
+#             print(False)
+#             break
+# else:
+#     print(True)
+#
+
 
 
 

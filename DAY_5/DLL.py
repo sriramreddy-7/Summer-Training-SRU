@@ -48,15 +48,37 @@ class dll:
         f=self.head
         b=self.tail
         count=0
-        while(f!=b):
+        while(f!=b and f!=b.next):
             if f.data==x or b.data==x:
-                print("count",count+1)
-                return "found"
-            count=count+1
+                return 1
             f=f.next
             b=b.prev
-        print("count",count)
-        return "Not Found"
+        if f.data==x:
+            return 1
+        return 0
+
+    def length(self):
+        f=self.head
+        b=self.tail
+        while(f!=b and f!=b.next):
+            f=f.next
+            b=b.prev
+            # print("\n",1)
+        if f!=b:
+            return "even"
+        return "odd"
+
+    def palindrome(self):
+        f=self.head
+        b=self.tail
+        while(f!=b and f!=b.next):
+            if f.data==b.data:
+                f=f.next
+                b=b.prev
+            else:
+                return "not plaindrome"
+        if f.data ==b.data or f.data ==d.next.data:
+            return "Palindrome"
 
 
 
@@ -71,7 +93,9 @@ a.addfront(10)
 a.addfront(1)
 a.display()
 a.reverse()
-print(a.search())
+# print(a.search())
+print(a.length())
+print(a.palindrome())
 
 
 
