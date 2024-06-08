@@ -28,8 +28,27 @@ arr = ["d","b","c","b","c","a"]
 k = 2
 d={}
 for i in arr:
-    if i not in d:
-        d[i]+=1
+    if i in d:
+        d[i]=d[i]+1
     else:
         d[i]=1
-print(d)
+# for k,v in d.items():
+#      print(k,v)
+print("----------------")
+c=1
+for key,v in d.items():
+    if v==1:
+        print("c,k",c,k)
+        if c==k:
+            print(key)
+            break
+        else:
+            print("bc",c)
+            c=c+1
+            print("ac",c)
+            print("3")
+    else:
+        print("4")
+
+# for k,v in d.items():
+#     print(k,v)
