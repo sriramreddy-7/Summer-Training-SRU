@@ -119,8 +119,31 @@ separator = "#"
 #     if i!="":
 #         s.append(i)
 # print(s)
-r=separator.join(words)
-s=r.split(separator)
+# r=separator.join(words)
+# s=r.split(separator)
+# heights = [1,1,4,2,1,3]
+# expected=[x for x in heights]
+# expected.sort()
+# count=0
+# for i in range(len(heights)):
+#     if heights[i]!=expected[i]:
+#         count+=1
+# print(count)
+arr = [1,2]
+d={}
+for i in arr:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+print(d)
+f=[v for k,v in d.items()]
+print(f,set(f))
+if len(f)==len(set(f)):
+    print(True)
+else:
+    print(False)
+
 
 
 
