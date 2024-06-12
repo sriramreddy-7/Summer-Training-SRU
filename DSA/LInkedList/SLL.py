@@ -50,10 +50,7 @@ class sll:
 
 
     def reverse(self):
-        t=self.head
-        while t.next!=None:
-            t=t.next
-        self.head=t
+
 
 
 obj=sll()
