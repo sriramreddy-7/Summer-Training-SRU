@@ -3,7 +3,6 @@ class node:
         self.d = {}
         self.flag = 0
 
-
 class tries:
     def __init__(self):
         self.root = node()
@@ -77,4 +76,3 @@ for i in range(n):
         print(t1.sugg(s))
     if a == '5':
         print(t1.longest_prefix(s))
-
